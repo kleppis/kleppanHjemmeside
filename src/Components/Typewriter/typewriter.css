@@ -1,0 +1,33 @@
+.typewriter {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.typewriter--primary {
+    color: var(--primary-color);
+    font-size: 8rem;
+}
+
+.typewriter--secondary {
+    color: var(--secondary-color);
+    /* Rød tekst */
+    font-size: 20px;
+}
+
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: currentColor;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+.typewriter {
+    animation: blink 0.7s step-end infinite;
+}
